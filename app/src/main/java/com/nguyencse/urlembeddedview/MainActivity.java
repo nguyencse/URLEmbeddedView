@@ -6,8 +6,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.nguyencse.libraries.urlembeddedview.URLEmbeddedData;
-import com.nguyencse.libraries.urlembeddedview.URLEmbeddedView;
+import com.nguyencse.URLConstants;
+import com.nguyencse.URLEmbeddedData;
+import com.nguyencse.URLEmbeddedView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 urlEmbeddedView.setURL(edtURL.getText().toString(), new URLEmbeddedView.OnLoadURLListener() {
                     @Override
                     public void onLoadURLCompleted(URLEmbeddedData data) {
-                        String lastUrl = ((url.startsWith(URLEmbeddedView.PROTOCOL) || url.startsWith(URLEmbeddedView.PROTOCOL_S)) ? "" : URLEmbeddedView.PROTOCOL) + url;
+                        String lastUrl = ((url.startsWith(URLConstants.PROTOCOL) || url.startsWith(URLConstants.PROTOCOL_S)) ? "" : URLConstants.PROTOCOL) + url;
                         urlEmbeddedView.title(data.getTitle() != null ? data.getTitle() : lastUrl);
                         urlEmbeddedView.description(data.getDescription());
                         urlEmbeddedView.host(data.getHost());

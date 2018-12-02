@@ -1,4 +1,4 @@
-package com.nguyencse.libraries.urlembeddedview;
+package com.nguyencse;
 
 import android.os.AsyncTask;
 
@@ -9,10 +9,6 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.net.URL;
-
-import static com.nguyencse.libraries.urlembeddedview.URLEmbeddedView.PROTOCOL;
-import static com.nguyencse.libraries.urlembeddedview.URLEmbeddedView.PROTOCOL_S;
-import static com.nguyencse.libraries.urlembeddedview.URLEmbeddedView.ROOT_URL_FAVOR_ICON;
 
 public class URLEmbeddedTask extends AsyncTask<String, Void, URLEmbeddedData> {
 
@@ -27,7 +23,7 @@ public class URLEmbeddedTask extends AsyncTask<String, Void, URLEmbeddedData> {
         URLEmbeddedData data = new URLEmbeddedData();
         try {
             String url = params[0];
-            url = ((url.startsWith(PROTOCOL) || url.startsWith(PROTOCOL_S)) ? "" : PROTOCOL) + url;
+            url = ((url.startsWith(URLConstants.PROTOCOL) || url.startsWith(URLConstants.PROTOCOL_S)) ? "" : URLConstants.PROTOCOL) + url;
 
             URL host = new URL(url);
             data.setHost(host.getHost());
@@ -53,7 +49,7 @@ public class URLEmbeddedTask extends AsyncTask<String, Void, URLEmbeddedData> {
                         break;
                 }
             }
-            data.setFavorURL(ROOT_URL_FAVOR_ICON + data.getHost());
+            data.setFavorURL(URLConstants.ROOT_URL_FAVOR_ICON + data.getHost());
         } catch (IOException e) {
             e.printStackTrace();
         }

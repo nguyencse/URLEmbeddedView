@@ -1,4 +1,4 @@
-package com.nguyencse.libraries.urlembeddedview;
+package com.nguyencse;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,12 +10,10 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.nguyencse.urlembeddedview.R;
 import com.squareup.picasso.Picasso;
 
 public class URLEmbeddedView extends ConstraintLayout {
-    public static final String PROTOCOL = "http://";
-    public static final String PROTOCOL_S = "https://";
-    public static final String ROOT_URL_FAVOR_ICON = "https://www.google.com/s2/favicons?domain=";
 
     private TextView txtTitle;
     private TextView txtDescription;

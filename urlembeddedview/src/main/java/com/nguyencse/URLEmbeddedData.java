@@ -1,4 +1,4 @@
-package com.nguyencse.libraries.urlembeddedview;
+package com.nguyencse;
 
 public class URLEmbeddedData {
     private String host;
