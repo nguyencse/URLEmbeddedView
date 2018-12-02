@@ -21,7 +21,7 @@ dependencies {
 }
 ```
 
-And DO NOT forget add internet permission in manifest if already not present
+And DO NOT forget to add internet permission in manifest if already not present
 
 ```groovy
     <uses-permission android:name="android.permission.INTERNET" />
