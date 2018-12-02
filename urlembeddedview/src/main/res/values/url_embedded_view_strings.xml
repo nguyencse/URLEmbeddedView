@@ -1,0 +1,5 @@
+<resources>
+    <string name="uev_title">Title</string>
+    <string name="uev_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="uev_host">github.com</string>
+</resources>

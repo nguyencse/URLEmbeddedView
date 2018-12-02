@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="URLEmbeddedView">
+        <attr name="title" format="string" />
+        <attr name="description" format="string" />
+        <attr name="host" format="string" />
+        <attr name="favor" format="reference" />
+        <attr name="thumbnail" format="reference" />
+    </declare-styleable>
+</resources>

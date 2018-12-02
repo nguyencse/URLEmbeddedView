@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/lnl_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textUri" />
+
+        <Button
+            android:id="@+id/btn_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Preview" />
+    </LinearLayout>
+
+    <com.nguyencse.libraries.urlembeddedview.URLEmbeddedView
+        android:id="@+id/uev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:description="Description"
+        app:favor="@drawable/ic_url"
+        app:host="abc.com"
+        app:layout_constraintTop_toBottomOf="@id/lnl_url"
+        app:thumbnail="@drawable/ic_url"
+        app:title="Title" />
+
+</android.support.constraint.ConstraintLayout>
