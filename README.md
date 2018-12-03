@@ -56,5 +56,16 @@ And DO NOT forget to add internet permission in manifest if already not present
        }
    });
 ```
+  Or you can use your layout to custom it:
+  
+```groovy
+   URLEmbeddedTask urlTask = new URLEmbeddedTask(new URLEmbeddedTask.OnLoadURLListener() {
+       @Override
+       public void onLoadURLCompleted(URLEmbeddedData data) {
+           // handle your code here
+       }
+   });
+   urlTask.execute(url);
+```
 
 ![Demo](screenshots/stackoverflow.png)
