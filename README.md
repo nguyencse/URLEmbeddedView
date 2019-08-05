@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://facebook.com/nguyencse)
 
-    URLEmbeddedView is a Android library which alows you show preview data of your URL.
+    URLEmbeddedView is a Android library which allows you show preview data of your URL.
 
 ### You can also:
     Pass URL to view and you can load some data of this URL to preview.
